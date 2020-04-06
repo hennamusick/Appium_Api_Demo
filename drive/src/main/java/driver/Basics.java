@@ -30,6 +30,7 @@ public class Basics extends MainPage {
 		driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
 		driver.findElementByClassName("android.widget.EditText").sendKeys("Hello Appium");
 		driver.findElementsByClassName("android.widget.Button").get(1).click();
+		
 	}
 
 
