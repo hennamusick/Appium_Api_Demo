@@ -2,6 +2,7 @@ package driver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -26,6 +27,7 @@ public class MainPage {
 
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(url, cap);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		return driver;
 	}
