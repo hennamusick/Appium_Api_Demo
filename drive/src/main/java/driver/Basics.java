@@ -14,12 +14,12 @@ public class Basics extends MainPage {
 	 */
 	public static void main(String[] args) throws MalformedURLException {
 		// TODO Auto-generated method stub
-		
+
 		AndroidDriver<AndroidElement> driver = capabilities();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		//xpath, id, xpath
-		
+
+		// xpath, id, xpath
+
 		/*
 		 * xpath Syntax //tagname[@attribute='Value']
 		 * 
@@ -30,8 +30,7 @@ public class Basics extends MainPage {
 		driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
 		driver.findElementByClassName("android.widget.EditText").sendKeys("Hello Appium");
 		driver.findElementsByClassName("android.widget.Button").get(1).click();
-		
-	}
 
+	}
 
 }
